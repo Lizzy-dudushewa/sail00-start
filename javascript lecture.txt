@@ -1,0 +1,36 @@
+javascript lecture
+to link javascript with html use script src=""
+
+variable are like containers that store date and there are different type of data types
+types of data types
+String: Strings are written with quotes. You can use single or double quotes:
+Number All JavaScript numbers are stored as decimal numbers (floating point). Numbers can be written with, or without decimals:
+Bigint
+Boolean
+Undefined
+Null
+Symbol
+Object
+
+The Object Datatype
+The object data type can contain both built-in objects, and user defined objects:
+
+in objects there is something called a key-value pair
+e.g {firstname = "joy", lastname = "opara"}
+
+firstname there is key while joy is value
+key is always constant but the value can change at any point
+
+Built-in object types can be:
+
+objects, arrays, dates, maps, sets, intarrays, floatarrays, promises, and more. 
+array helps you have multiple values inside a variable
+
+var is an old method of calling a variable while let and const is a newer method of calling a variable 
+this is like older version verses newer method 
+let and const are different 
+var is an old method of calling a variable 
+let variable and var variable can be changed at anytime 
+const means constant it means it cant be the values inside the variable called will always remain constant it can be changed 
+
+= means assigned, it means you are assigning a content to a variable

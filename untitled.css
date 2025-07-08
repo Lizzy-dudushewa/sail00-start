@@ -1,0 +1,58 @@
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+
+/* .conatiner{
+/* display: flex;
+flex-direction: row;
+margin-top: 200px;
+flex-wrap:wrap; */
+
+
+.subject{
+    display: grid;
+    background-color: aqua;
+    grid-template-columns:repeat(2, 1fr);
+    border-color: black;
+    margin-bottom: 2%;
+}
+.first{
+    width: 50%; 
+    height: 100px;
+    background-color: red;
+   
+    }
+
+.second{
+     width: 50%; 
+    height: 100px;
+    background: black;
+    }
+
+.third{
+    width: 50%; 
+    height: 100px;
+    background:green;
+    }
+
+.fourth{
+    width: 50%; 
+    height: 100px;
+    background: yellow;
+    }
+
+.fifth{
+    width: 50%; 
+    height: 100px;
+    background:purple;
+    }
+
+    .sixth{
+        width: 50%; 
+        height: 100px;
+        background:pink;
+        }

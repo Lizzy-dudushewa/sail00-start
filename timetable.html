@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="timetable.css">
+    <title>Timetable</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title"> TImetable Generator</h1>
+        <form id="timetable-form">
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text"  id="subject" required placeholder="Enter SUbject">
+            </div>
+            <div class="form-group">
+                <label for="start-time">Start Time:</label>
+                <input type="time" id="start-time" required>
+            </div>
+            <div class="form-group">
+                <label for="end-time">End Time:</label>
+                <input type="time" id="end-time" required>
+            </div>
+            <div id="days" class="checkbox-group">
+                <label><input type="checkbox" value="Monday"> Monday</label>
+                <label><input type="checkbox" value="Tuesday"> Tuesday</label>
+                <label><input type="checkbox" value="Wednesday"> Wednesday</label>
+                <label><input type="checkbox" value="Thursday"> Thursday</label>
+                <label><input type="checkbox" value="Friday"> Friday</label>
+                <label><input type="checkbox" value="Saturday"> Saturday</label>
+            </div>
+ 
+    </div>
+    <button type="submit" class="btn">Add to Timetable</button>
+</form>
+
+<table id="timetable" class="timetable">
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>

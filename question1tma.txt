@@ -1,0 +1,64 @@
+question1:
+# Application for calculating the total and average cost of items purchased
+
+def calculate_cost():
+    # Input the customer name and item costs
+    customer_name = input("Enter Customer's Name: ")
+
+    try:
+        # Taking cost inputs for three products
+        cost1 = float(input("Enter the cost of the first product: "))
+        cost2 = float(input("Enter the cost of the second product: "))
+        cost3 = float(input("Enter the cost of the third product: "))
+        
+        # Calculate total and average cost
+        total_cost = cost1 + cost2 + cost3
+        average_cost = total_cost / 3
+        
+        # Display the result
+        print(f"\nCustomer: {customer_name}")
+        print(f"Total Cost: {total_cost}")
+        print(f"Average Cost: {average_cost:.2f}")
+        
+    except ValueError:
+        print("Please enter valid numerical values for the costs.")
+
+# Call the function
+calculate_cost()
+
+
+# Application to display student grades based on scores
+
+def get_grade(score):
+    if 70 <= score <= 100:
+        return 'A'
+    elif 60 <= score < 70:
+        return 'B'
+    elif 50 <= score < 60:
+        return 'C'
+    elif 40 <= score < 50:
+        return 'D'
+    elif 0 <= score < 40:
+        return 'F'
+    else:
+        return 'Invalid Score'
+Question2:
+def student_grades():
+    try:
+        num_students = int(input("Enter the number of students: "))
+        
+        for _ in range(num_students):
+            student_name = input("\nEnter student's name: ")
+            score = float(input(f"Enter the score for {student_name}: "))
+            
+            grade = get_grade(score)
+            
+            print(f"Student: {student_name}")
+            print(f"Score: {score}")
+            print(f"Grade: {grade}")
+        
+    except ValueError:
+        print("Please enter valid numerical values for the score and number of students.")
+
+# Call the function
+student_grades()

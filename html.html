@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Walker Booking</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      background: #8a2be2;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li {
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .Container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      background: white;
+    }
+
+    .left-section, .right-section {
+      flex: 1 1 400px;
+      padding: 20px;
+    }
+
+    .left-section {
+      display: flex;
+      justify-content: center;
+    }
+
+    .phone {
+      width: 100%;
+      max-width: 300px;
+      background: #fff;
+      border-radius: 25px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header {
+      background: #8a2be2;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .header img.avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .chat {
+      text-align: left;
+    }
+
+    .message {
+      background: #f1f1f1;
+      padding: 8px;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      display: inline-block;
+      max-width: 80%;
+    }
+
+    .sent {
+      background: #8a2be2;
+      color: white;
+      align-self: flex-end;
+    }
+
+    .images img {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      margin-right: 5px;
+    }
+
+    .Options {
+      margin-top: 10px;
+    }
+
+    .Options button {
+      background: #8a2be2;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .right-section {
+      text-align: left;
+    }
+
+    .right-section h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .right-section p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background: #fafafa;
+      padding: 60px 20px;
+    }
+
+    .feature-card {
+      max-width: 300px;
+      text-align: center;
+      padding: 20px;
+      margin: 10px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .feature-card h3 {
+      margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      background: #8a2be2;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Responsive Tweaks */
+    @media (max-width: 768px) {
+      .Container {
+        flex-direction: column;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .right-section {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">PawBooking</div>
+    <ul>
+      <li>Home</li>
+      <li>Features</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="Container">
+    <div class="left-section">
+      <div class="phone">
+        <div class="header">
+          <img src="avatar.jpg" alt="Avatar" class="avatar">
+          <span>Samuel Green</span><br>
+          <small>Available to Walk</small>
+        </div>
+        <div class="chat">
+          <p class="message received">That sounds great. I'd be happy with that.</p>
+          <p class="message received">Could you send over some pictures of your dog, please?</p>
+          <div class="images">
+            <img src="dog-image-1.jpg" alt="dog 1">
+            <img src="dog-image-2.jpg" alt="dog 2">
+            <img src="dog-image-3.jpg" alt="dog 3">
+          </div>
+          <p class="message sent">Here are a few pictures. She's a happy girl!</p>
+          <p class="message received">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+        </div>
+        <div class="Options">
+          <button>30 minute walk - $29</button>
+          <button>1 hour walk - $49</button>
+        </div>
+        <input type="text" placeholder="Type a message..." />
+      </div>
+    </div>
+
+    <div class="right-section">
+      <h2>Simple Booking</h2>
+      <p>
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed, you can rate your walker and book again — all through the chat.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <h3>Live Chat</h3>
+      <p>Message your walker in real time and get instant updates.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Flexible Scheduling</h3>
+      <p>Book 30-minute or 1-hour walks that fit your day.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Ratings & Reviews</h3>
+      <p>Leave feedback and see what others think of your walker.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 PawBooking. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

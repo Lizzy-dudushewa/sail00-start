@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    color: rgb(43, 20, 36);
+    font-family: "Work Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    
+}
+nav {
+    font-family: "Work Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 15px 50px;
+    
+
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li {
+    list-style: none;
+    
+}
+
+nav ul li a {
+    color:hsl(from color h s l);
+    text-decoration: none;
+}
+
+.btn {
+    padding: 15px 25px;
+}
+
+nav ul .btn{
+background-color: rgb(224, 177, 46);
+color: white;
+}
+
+h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:
+}
+text-block {
+    text-align: center;
+    width: 60px;
+    margin: 0px auto;
+
+}
+text-block h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+text-block p {
+    font-size: 16px;
+    width: 70;
+}

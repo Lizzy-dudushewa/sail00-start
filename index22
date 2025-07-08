@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+    <title> Class Work</title>
+    <body>
+        <p> Time Table</p>
+        <p> English</p>
+        <p> Maths</p>
+        <p> Physics</p>
+        <p> Computer</p>
+        <p>Economics</p>
+    </body>
+</head>
